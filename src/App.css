@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: var(--color-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+    color: unset;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: #FF8A71;
+}
+button:hover {
+    background: #FFFFFF;
+    color: #FF8A71;
+}
+
+.h1Small {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.h1Large {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bar {
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+}
+
+.p1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #81AFDD;
+}
+.p2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #81AFDD;
+}
+.p3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FF8A71;
+}
+.p4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    /* line-height: 75px; */
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+ .gradient_bg {
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+
+}
+   
+
+.gradient_text { 
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.Hero {
+    background:radial-gradient(circle at 0% 15%, rgba(0, 40, 83, 0.9) 0%, rgba(4, 12, 24, 1) 47%);
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+@media screen and (max-width: 700px) {
+    .sectionPadding {
+        padding: 4rem;
+    }
+    .sectionMargin {
+        padding: 4rem;
+    }
 }
+
+@media screen and (max-width: 550px) {
+    .sectionPadding {
+        padding: 4rem 2rem;
+    }
+    .sectionMargin {
+        padding: 4rem 2rem;
+    }
+}
+    

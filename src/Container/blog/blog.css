@@ -1,0 +1,164 @@
+.blogMain {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1500px;
+}
+
+.blogContent {
+    margin: 0 6rem;
+    width: 100%;
+}
+.blogContent .h1Large {
+    max-width: 701px;
+}
+
+.blogBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomLeft .kard{
+    width: 418px;
+    height: 696px;
+    background: #042C54;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+}
+.bottomLeft .kard img {
+    width: 418px;
+    height: 278px;
+}
+.bottomLeft .kard div {
+    width: 342px;
+    height: 348px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.bottomCards {
+    height: 696px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.kard {
+    width: 327px;
+    height: 323px;
+    background: #042C54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+.kard img {
+    width: 327px;
+}
+.kard div {
+    width: 284px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .bottomLeft .kard{
+        width: 327px;
+        height: 545px;
+    }
+    .bottomLeft .kard img {
+        width: 326px;
+        height: 225px;
+    }
+    .bottomLeft .kard div {
+        width: 268px;
+        height: 273px;
+    }
+    .bottomLeft div h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .bottomCards {
+        height: 545px;
+    }
+    .kard {
+        width: 256px;
+        height: 254px;
+    }
+    .kard img {
+        width: 256px;
+    }
+    .kard div {
+        width: 223px;
+        height: 135px;
+    }
+    .kard div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media screen and (max-width: 750px) {
+        .blogContent .h1Large {
+            font-size: 48px;
+        }
+        .blogBottom {
+            flex-wrap: wrap;
+        }
+        .bottomLeft {
+            width: 550px;
+            height: 225px;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-bottom: 0;
+            margin-bottom: 30px;
+        }
+        .bottomLeft img {
+            width: 256px;
+            height: 225px;
+
+        }
+        .bottomLeft div {
+            width: 251px;
+            height: 176px;
+            margin-left: 16px;
+        }
+
+        @media screen and (max-width: 550px) {
+            .blogContent .h1Large {
+                font-size: 34px;
+                line-height: 50px;
+            }
+            .bottomLeft {
+                width: 327px;
+                height: 545px;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 26px;
+            }
+            .bottomLeft img {
+                width: 326px;
+                height: 225px;
+            }
+            .bottomLeft div {
+                width: 268px;
+                height: 273px;
+            }
+            .bottomCards {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}

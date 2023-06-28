@@ -1,0 +1,148 @@
+.mainHeaderContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;
+}
+.headerContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0rem 6rem;
+}
+
+.contentLeft {
+    width: 100%;
+
+}
+.contentLeft h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contentLeft p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #81AFDD;
+}
+.headerImput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.headerImput input {
+    flex: 2;
+    width: 456px;
+    height: 65px;
+    background: #052D56;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding-left: 32px;
+}
+::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3D6184;
+}
+
+.headerImput button {
+    flex: 0.6;
+    width: 174px;
+    height: 65px;
+    background: #FF4820;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.headerPeople {
+    display: flex;
+}
+
+.headerPeople p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.contentRight img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+@media  screen and (max-width: 1050px) {
+    .headerContent {
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+    .contentRight img {
+        width: 568px;
+        /* height: 600px; */
+    }
+    
+}
+
+@media  screen and (max-width: 700px) {
+    .headerImput input {
+        width: 400px;
+    }
+    ::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .headerImput button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .headerContent {
+        margin: 0 1rem;
+    }.contentRight img {
+        width: 100%;
+        /* height: 100%; */
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    .contentLeft h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .contentLeft p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .headerPeople {
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerContent {
+        justify-content: center;
+        align-items: center;
+    }
+    .headerImput input {
+        width: 350px;
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    .headerImput input {
+        width: 300px;
+    }
+}
